@@ -7,6 +7,7 @@ import shutil
 class WATaBoy(Emulator):
     def __init__(self):
         super().__init__("wataboy", "https://humphri.es/WATaBoy/", startup_time=0.6)
+        self.speed = 10.0
     
     def setup(self):
         downloadGithubRelease("energeticbark/WATaBoy", "downloads/wataboy.zip")
